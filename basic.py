@@ -1,3 +1,6 @@
+# data tybe , if statement ,
+
+
 # ----------- int -----------
 
 x = 10
@@ -423,3 +426,87 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
 else:
     print("Not a leap year")
 """
+
+# examples
+
+"""
+Exercise 1: Number Comparison Write a program that takes two numbers as input and 
+prints whether the first number is greater, smaller, or equal to the second number.
+
+Exercise 2: Tax Calculator Write a program that calculates the income tax based on 
+the user's income. If the income is less than $50,000, the tax is 10%. If the income 
+is between $50,000 and $100,000, the tax is 20%. Otherwise, the tax is 30%.
+
+Exercise 3: BMI Calculator Write a program that calculates the Body Mass Index (BMI) based 
+on the user's weight and height. Print a message indicating whether the person is underweight, 
+normal, overweight, or obese based on the BMI.
+
+Exercise 4: Sorting Numbers Write a program that takes three numbers as input and prints them 
+in ascending order.
+
+
+x = float(input("input first number: "))
+y = float(input("input second number: "))
+z = float(input("input third number: "))
+
+
+if(x>y):
+    if x>z:
+        print(f"max{x}")
+        if y>z:
+            print(f"mid{y}\n min{z}")
+        else :
+            print(f"mid{z}\n min{y}")
+    else :
+        print(f"max{z} \n mid{x} \n min{y}")
+
+elif(y>x):
+    if y>z:
+        print(f"max{y}")
+        if y>z:
+            print(f"mid{x}\n min{z}")
+        else :
+            print(f"mid{z}\n min{x}")
+    else :
+        print(f"max{z} \n mid{y} \n min{x}")
+
+
+        
+
+Exercise 5: Day of the Week Write a program that takes a number (1-7) as input and prints 
+the corresponding day of the week: "Sunday," "Monday," etc.
+
+Exercise 6: Rock-Paper-Scissors Game Write a program that simulates a simple rock-paper-scissors game. 
+Take the user's choice as input and determine the winner.
+
+Exercise 7: Age Group Classifier Write a program that takes a person's age as input and classifies them 
+into different age groups: "Child" (0-12), "Teen" (13-19), "Adult" (20-59), or "Senior" (60+).
+
+
+age = int(input("enter age: "))
+
+if age < 0: 
+    print("invalid Age")
+
+elif 0<= age <=12 : 
+    print("Child")
+
+elif 13<= age <=19 :
+    print("Teen")
+
+elif 20<= age <=59: 
+    print("Adult")
+
+else: 
+    print("Senior")
+
+    
+
+Exercise 8: In this exercise you will create a program that reads a letter of the alphabet from the user. 
+If the user enters a, e, i, o or u then your program should display a message indicating that 
+the entered letter is a vowel. If the user enters y then your program should display 
+a message indicating that sometimes y is a vowel, and sometimes y is a consonant. 
+Otherwise your program should display a message indicating that the letter is a consonant
+
+"""
+
