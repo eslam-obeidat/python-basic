@@ -163,7 +163,7 @@ for i in range (-10,0):
 _________________________________________________
 Exercise 7: Average :In this exercise you will create a program
 that computes the average of a collecƟon of values entered by
-the user. The user will enter 0 as a senƟnel value to indicate
+the user. The user will enter 0 as a sen0nel value to indicate
 that no further values will be provided. Your program should
 display an appropriate error message if the first value entered
 by the user is 0
@@ -174,7 +174,216 @@ by the user is 0
 
 """
 def function_name (parameter1, parameter2):
-        statment1
+        statement1
         statement2
         return value to return
 """
+
+"""
+z=4
+
+def Sum (x,y):
+    z = x + y
+    # print in function
+    print(z)
+
+Sum(1,2)
+print(z)
+"""
+
+"""
+def avg (x,y,z):
+    re = (x + y + z)/3
+    print (f" the average  is : {re}")
+    return  re
+
+avg (1,2,3)
+"""
+
+"""
+def sub (x,y):
+    return  x - y
+
+e = sub (5,3)
+s = sub (y = 8 , x = 4 )
+
+print  (e,s)   
+
+"""
+
+"""
+#global 
+
+def Sum (x,y):
+    global z
+    z = x + y
+    # print in function
+    print(z)
+
+Sum(1,2)
+print(z)
+"""
+
+"""
+def calc (x,y,z):
+    global maxi
+    maxi = max ([x,y,z])
+    mini = min ([x,y,z])
+    avg  = sum ([x+y+z])/3
+
+r = calc (5,2,8)
+print(maxi)  
+"""
+
+"""
+z=4
+
+def Sum (x,y):
+    
+    z = x + y
+    # print in function
+    print(z)
+
+z = Sum(1,2)
+print(z)
+"""
+
+"""
+def Sum (x,y):
+    z = x + y
+
+    return z
+
+sum_fun = Sum (1,2)
+print(sum_fun)
+"""
+
+"""
+def Sum (x,y = 0 ):
+    z = x + y
+
+    return z
+
+sum_fun = Sum (1)
+print(sum_fun)
+"""
+
+"""
+def Sum (x,y,z = 0 ):
+    Sum = x + y + z
+
+    return Sum
+
+sum_fun = Sum (1,2)
+print(sum_fun) 
+"""
+"""
+def Sum ( x , y , z = 0 ):                #true
+    #Sum ( x , y = 0 , z ):               #false
+    #Sum ( x = 0 , y , z ):               #false
+    #Sum ( x = 0 , y = 0 , z = 0 ):       #true
+    Sum = x + y + z
+
+    return Sum
+
+sum_fun = Sum (1,2,4)
+print(sum_fun) 
+""" 
+
+"""
+def Sum ( x = 0 , y = 0 , z = 0 ):
+    Sum = x + y * z
+    return Sum
+
+sum_fun = Sum (y = 2 , z = 4)
+print(sum_fun) 
+"""
+
+"""
+#ascii table
+
+print(ord("r"))
+print(chr(77))
+"""
+
+"""
+#Task 1
+
+Write a Python function that accepts a string and counts the number of upper and 
+lower case letters. 
+Sample String: "The quick Brow Fox 
+Expected Output: 
+No. of Upper case characters: 3 
+No. of Lower case Characters: 12
+
+st = input (" Enter a  string: ")
+def  count_string (st):
+    count_upper = 0 
+    count_lower = 0
+    count_space = 0 
+    for  i  in  st:
+        if 65  <= ord(i) <= 90 :
+            count_upper += 1
+        elif   97  <= ord(i) <= 122 :
+            count_lower += 1
+        elif ord(i) == 32 :
+            count_space += 1
+
+    print  (f" No. of Upper case characters = {count_upper} "  )
+    print  (f" No. of Lower case Characters = {count_lower} "  )
+    print  (f" No. of space = {count_space} " )
+
+count_string (st)
+
+
+"""
+
+"""
+Write a Python program to print the even numbers from a given lis 
+Sample List: [1, 2, 3, 4, 5, 6, 7, 8, 9] 
+Expected Result: [2, 4, 6, 8]
+
+list1=[1,2,3,4,5,6,7,8,9]
+def check(x):
+    for i in x:
+        if i % 2 == 0 :
+            print("this number is even", i )
+
+        else:
+            continue
+check(list1)
+
+"""
+
+"""
+Write a Python function that takes a list and returns 
+a new list with distinct elements from the first list.
+
+Sample List: [1,2,3,3,3,3,4,5]
+Unique List: [1, 2, 3, 4, 5]
+
+#1
+def unique_elements(lst):
+  unique_list = []
+  for item in lst:
+    if item not in unique_list:
+      unique_list.append(item)
+  return unique_list
+
+sample_list = [1, 2, 3, 3, 3, 3, 4, 5]
+unique_list = unique_elements(sample_list)
+print(unique_list)  
+
+
+#2
+def unique_elements(input_list):
+    return list(set(input_list))
+
+input_list = [1, 2, 3, 3, 3, 3, 4, 5]
+unique_list = unique_elements(input_list)
+print(unique_list)  
+
+"""
+
+
+
